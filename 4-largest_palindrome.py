@@ -1,0 +1,1 @@
+def is_palindrome(n):    return str(n) == str(n)[::-1]    largest = 1for x in range(100, 1000):    for y in range(100, 1000):        if x*y > largest and is_palindrome(x*y):            largest = x*y            print largest
